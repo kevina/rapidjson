@@ -402,6 +402,21 @@ RAPIDJSON_NAMESPACE_END
 #define RAPIDJSON_ASSERT(x) assert(x)
 #endif // RAPIDJSON_ASSERT
 
+
+///////////////////////////////////////////////////////////////////////////////
+// RAPIDJSON_GET_VALUE_FAILURE
+
+//! RAPIDJSON_GET_VALUE_FAILURE
+/*! \ingroup RAPIDJSON_CONFIG
+
+  Code to execute when Document.operator[] fails.
+  "RAPIDJSON_ASSERT(false)".
+ */
+#ifndef RAPIDJSON_GET_VALUE_FAILURE
+#define RAPIDJSON_GET_VALUE_FAILURE RAPIDJSON_ASSERT(false)
+#endif
+
+
 ///////////////////////////////////////////////////////////////////////////////
 // RAPIDJSON_STATIC_ASSERT
 
